@@ -1,0 +1,15 @@
+#!/bin/bash
+echo -n "Do you agree with this? [yes or no]:"
+read answer
+
+case $answer in
+	[yY] | [yY][eE][Ss])
+		echo "Agreed"
+		;;
+	[nN] | [nN][oO])
+		echo "I guessss"
+		;;
+	*)
+		echo "Invalid input"
+		;;
+esac
